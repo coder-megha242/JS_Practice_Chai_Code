@@ -1,0 +1,86 @@
+//Primitive Datatypes :  Primitive datatypes are call by value. In JavaScript, primitive data types are the basic building blocks of data. They represent single values and are immutable, meaning they cannot be changed once created.
+//Primitive values are copied by value. This means that when you assign a primitive value to a new variable, you create a separate copy of that value.
+//Primitive data types are not objects, so they do not have methods or properties. However, JavaScript automatically wraps primitives in temporary objects to allow you to use methods on them.
+
+
+//7 Type of Datatypes :
+
+//1) String: Represents textual data enclosed in single ('') or double ("") quotes.
+//2) Number: Represents numeric values, including integers and floating-point numbers.
+//3) Boolean: Represents a logical value, either true or false.
+//4) Undefined: Represents a variable that has been declared but has not been assigned a value.
+//5) Null: Represents the intentional absence of any object value.
+//6) Symbol (ES6): Represents a unique and immutable value, often used as keys for object properties.
+//7) BigInt (ES2020): Represents integers with arbitrary precision, allowing you to work with numbers larger than the maximum safe integer value.
+
+//Example : 
+
+// 1)String 
+
+let str = 'Hello All';
+let str1 = "Welcome to my new house";
+
+// 2)Number 
+let x = 250;
+let y = 40.5;
+
+// 3)Boolean 
+let a = true;
+let b = false; 
+
+// 4)Undefine
+let c;
+console.log(x); // Outputs: undefined
+
+// 5)Null
+let d = null;
+console.log("Value of x=" + x);
+
+// 6)BigInt
+let bigNum = 123422222222222222222222222222222222222n
+console.log(bigNum)
+
+// 7)Symbol
+let sym = Symbol("Hello")
+console.log(typeof(sym));
+console.log(sym);
+
+
+//Non Primitive Data type (Refernce Data Type) :
+
+//In JavaScript, non-primitive data types, also known as reference types, are data types that are not directly stored in memory but instead hold a reference to the memory location where the data is stored.
+
+//Here's what you need to know:
+//Key Characteristics of Non-Primitive Data Types:
+
+//1)Mutable:
+//Non-primitive data types can be modified after they are created. Changes made to a non-primitive data type will affect all references to that data type.
+
+//2)Stored on the Heap:
+//Non-primitive data types are stored on the heap, a region of memory used for dynamic memory allocation.
+
+//3)Reference Values:
+//When you assign a non-primitive data type to a variable, you're actually assigning a reference to the memory location where the data is stored. 
+ 
+
+
+//Examples of Non-Primitive Data Types in JavaScript: 3 types
+
+//1)Objects: Objects are collections of key-value pairs.
+//2)Arrays: Arrays are ordered collections of values.
+//3)Functions: Functions are reusable blocks of code that can be called to perform a specific task
+
+//1) Object
+const person = {
+    name: "Alice",
+    age: 30
+  };
+  
+//2) Array
+  const numbers = [1, 2, 3];
+  
+
+// 3)Function
+  function greet(name) {
+    console.log("Hello, " + name);
+  }
